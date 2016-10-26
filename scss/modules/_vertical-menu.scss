@@ -1,0 +1,109 @@
+.pro-vmenu, .pro-vmenu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+.pro-vmenu{
+	border-bottom: 1px solid #efefef;
+	.current-menu-ancestor,
+	.current-menu-item{
+		>.sub-menu{
+			display: block;
+		}
+	}
+	.sub-menu{
+		display: none;
+	}
+	ul{
+		padding-left: 15px;
+		background: #efefef;
+	}
+	li{
+		display: block;
+		position: relative;
+		border: 1px solid #efefef;
+		border-bottom: none;
+		a{
+			display: block;
+			cursor: pointer;
+		}
+	}
+}
+.pro-vmenu {
+	li{
+		&:hover,
+		&.current-menu-item,
+		&.current-menu-ancestor{
+			>a{
+				color: #4291d4;
+			}
+		}
+	}
+	a{
+		padding: 8px 22px;
+		text-decoration: none;
+		color: black;
+		font-family: Roboto;
+		font-size: 15px;
+	}
+}
+.pro-vmenu li.menu-item-has-children > a{
+	padding-right: 40px;
+}
+.pro-vmenu li.menu-item-has-children > a:after {
+	position: absolute;
+	right: 26px;
+	top: 22px;
+	z-index: 5;
+	display: block;
+	height: 8px;
+	width: 2px;
+	background: #4291d4;
+	content: "";
+}
+
+.pro-vmenu li.menu-item-has-children > a:before {
+	position: absolute;
+	right: 23px;
+	top: 20px;
+	display: block;
+	width: 8px;
+	height: 2px;
+	background: #4291d4;
+	content: "";
+}
+.pro-vmenu li.menu-item-has-children > a:after,
+.pro-vmenu li.menu-item-has-children > a:before{
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.pro-vmenu li.menu-item-has-children.open > a:after,
+.pro-vmenu li.menu-item-has-children.current-menu-item > a:after,
+.pro-vmenu li.menu-item-has-children.current-menu-ancestor > a:after{
+	position: absolute;
+	right: 22px;
+	top: 19px;
+	z-index: 5;
+	display: block;
+	height: 8px;
+	width: 2px;
+	background: #4291d4;
+	content: "";
+}
+
+.pro-vmenu li.menu-item-has-children.open > a:before,
+.pro-vmenu li.menu-item-has-children.current-menu-item > a:before,
+.pro-vmenu li.menu-item-has-children.current-menu-ancestor > a:before{
+	position: absolute;
+	right: 24px;
+	top: 22px;
+	display: block;
+	width: 8px;
+	height: 2px;
+	background: #4291d4;
+	content: "";
+}
