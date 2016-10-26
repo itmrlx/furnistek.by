@@ -15,6 +15,10 @@
 								<a href="<?php the_permalink(); ?>" class="item">
 									<?php $slide_img = get_field('item_img'); ?>
 									<div class="img-block">
+										<?php $notin = get_field('notin'); ?>
+										<?php if( $notin ): ?>
+											<div class="notin">ожидаем поступления</div>
+										<?php endif; ?>
 										<img src="<?php echo $slide_img['sizes']['medium']; ?>" alt="<?php echo $slide_img['alt']; ?>">
 									</div>
 									<header class="title">
@@ -64,6 +68,10 @@
 							<a href="<?php the_permalink(); ?>" class="item">
 								<?php $slide_img = get_field('item_img'); ?>
 								<div class="img-block">
+									<?php $notin = get_field('notin'); ?>
+									<?php if( $notin ): ?>
+										<div class="notin">ожидаем поступления</div>
+									<?php endif; ?>
 									<img src="<?php echo $slide_img['sizes']['medium']; ?>" alt="<?php echo $slide_img['alt']; ?>">
 								</div>
 								<header class="title">

@@ -23,3 +23,33 @@
 .pagination{
 	margin-bottom: 0;
 }
+.item{
+	.img-block{
+		position: relative;
+		overflow: visible !important;
+		.notin{
+			position: absolute;
+			background: #f00;
+			padding: 7px 10px;
+			bottom: 0;
+			left: -15px;
+			color: #fff;
+			font-size: 15px;
+		}
+	}
+}
+.img-big{
+	a{
+		position: relative;
+		overflow: visible !important;
+		.notin{
+			position: absolute;
+			background: #f00;
+			padding: 7px 10px;
+			bottom: 0;
+			left: 0px;
+			color: #fff;
+			font-size: 15px;
+		}
+	}
+}

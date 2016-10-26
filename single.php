@@ -15,7 +15,13 @@
 						<div class="col-xs-4 img-big">
 							<div class="row img-big">
 								<div class="col-xs-12">
-									<a href="<?php echo $slide_img['url']; ?>"><img src="<?php echo $slide_img['sizes']['medium']; ?>" alt="<?php echo $slide_img['alt']; ?>"></a>
+									<a href="<?php echo $slide_img['url']; ?>">
+										<?php $notin = get_field('notin'); ?>
+										<?php if( $notin ): ?>
+											<div class="notin">ожидаем поступления</div>
+										<?php endif; ?>
+										<img src="<?php echo $slide_img['sizes']['medium']; ?>" alt="<?php echo $slide_img['alt']; ?>">
+									</a>
 								</div>
 							</div>
 							<div class="row img-small">
