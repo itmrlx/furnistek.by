@@ -19,6 +19,10 @@
 										<?php if( $notin ): ?>
 											<div class="notin">ожидаем поступления</div>
 										<?php endif; ?>
+										<?php $super = get_field('super'); ?>
+										<?php if( $super ): ?>
+											<div class="super"></div>
+										<?php endif; ?>
 										<img src="<?php echo $slide_img['sizes']['medium']; ?>" alt="<?php echo $slide_img['alt']; ?>">
 									</div>
 									<header class="title">
@@ -71,6 +75,10 @@
 									<?php $notin = get_field('notin'); ?>
 									<?php if( $notin ): ?>
 										<div class="notin">ожидаем поступления</div>
+									<?php endif; ?>
+									<?php $super = get_field('super'); ?>
+									<?php if( $super ): ?>
+										<div class="super"></div>
 									<?php endif; ?>
 									<img src="<?php echo $slide_img['sizes']['medium']; ?>" alt="<?php echo $slide_img['alt']; ?>">
 								</div>

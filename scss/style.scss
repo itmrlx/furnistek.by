@@ -142,13 +142,13 @@
 		font-weight: 400;
 	}
 	.slider-container{
-		height: 314px;
 		overflow: hidden;
 	}
 }
 
 // slide item
 .slide{
+	padding: 10px 15px;
 	.item{
 		border: none;
 	}
@@ -159,8 +159,6 @@
 	background: #fff;
 	padding: 15px;
 	transition: all .3s;
-
-	overflow: hidden;
 	border: 1px solid #efefef;
 	margin-bottom: 30px;
 	&:hover{

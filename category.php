@@ -9,9 +9,9 @@
 			<div class="col-xs-9 text catalog">
 				<h1 class="title-default">Фурнитура для стеклянных душевых</h1>
 				<div class="row">
-					<?php 
+					<?php
  global $query_string;
- query_posts( $query_string . '&order=ASC' ); 
+ query_posts( $query_string . '&order=ASC' );
 					 ?>
 					<?php if(have_posts()) : ?>
 					<?php while(have_posts()) : the_post(); ?>
@@ -22,6 +22,10 @@
 									<?php $notin = get_field('notin'); ?>
 									<?php if( $notin ): ?>
 										<div class="notin">ожидаем поступления</div>
+									<?php endif; ?>
+									<?php $super = get_field('super'); ?>
+									<?php if( $super ): ?>
+										<div class="super"></div>
 									<?php endif; ?>
 									<img src="<?php echo $slide_img['sizes']['medium']; ?>" alt="<?php echo $slide_img['alt']; ?>">
 								</div>

@@ -20,12 +20,16 @@
 										<?php if( $notin ): ?>
 											<div class="notin">ожидаем поступления</div>
 										<?php endif; ?>
+										<?php $super = get_field('super'); ?>
+										<?php if( $super ): ?>
+											<div class="super"></div>
+										<?php endif; ?>
 										<img src="<?php echo $slide_img['sizes']['medium']; ?>" alt="<?php echo $slide_img['alt']; ?>">
 									</a>
 								</div>
 							</div>
 							<div class="row img-small">
-								<?php 
+								<?php
 								$images = get_field('item_thumbs');
 
 								if( $images ): ?>
@@ -37,7 +41,7 @@
 										</div>
 									<?php endforeach; ?>
 								<?php endif; ?>
-								
+
 							</div>
 						</div>
 						<div class="col-xs-8">

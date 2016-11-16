@@ -36,6 +36,17 @@
 			color: #fff;
 			font-size: 19px;
 		}
+		.super{
+			width: 120px;
+			height: 80px;
+			position: absolute;
+			top: -25px;
+			right: -25px;
+			background-image: url(../img/act.svg);
+			background-size: 120px 80px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
 	}
 }
 .img-big{
@@ -50,6 +61,17 @@
 			left: 0px;
 			color: #fff;
 			font-size: 19px;
+		}
+		.super{
+			width: 120px;
+			height: 80px;
+			position: absolute;
+			top: -15px;
+			right: -15px;
+			background-image: url(../img/act.svg);
+			background-size: 120px 80px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
 		}
 	}
 }
